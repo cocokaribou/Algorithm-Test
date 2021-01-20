@@ -15,3 +15,5 @@ https://stackoverflow.com/questions/2231369/scanner-vs-bufferedreader
 ### BufferedReader
 https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html
 
+### Scanner
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html
