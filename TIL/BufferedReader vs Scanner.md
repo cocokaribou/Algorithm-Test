@@ -12,8 +12,6 @@ https://stackoverflow.com/questions/2231369/scanner-vs-bufferedreader
 - BufferedReader has significantly larger buffer memory than Scanner. Use BufferedReader if you want to get long Strings from a stream, and use Scanner if you want to parse specific type of token from a stream.
 
 ## Java SE 11 & JDK 11 API Doc
-### BufferedReader
-https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html
+### [BufferedReader](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html)
 
-### Scanner
-https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html
+### [Scanner](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html)
