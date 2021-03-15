@@ -21,8 +21,14 @@
     // 0 <= strs[i].length <= 200
     // strs[i] consists of only lower-case English letters.
     
+    import java.util.*;
+    
     class Solution {
         public String longestCommonPrefix(String[] strs) {
+            
+            //글자순으로 오름차순 정렬부터
+            Arrays.sort(strs, Comparator.comparingInt(String::length));
+            
             char[][] charArr = new char[strs.length][];
     
             for(int i=0; i<strs.length; i++){
@@ -32,8 +38,16 @@
             
             //아 전래 귀찮은데 js로 풀까..
             
-            boolean checker = false;
             String prefix = "";
+            
+            if(charArr.length==1){
+                for(char[] row:charArr){
+                    for(char x: row){
+                        prefix += prefix+""+x;
+                    }
+                }
+            }
+            
             
             //char[i][j]
             
@@ -42,7 +56,6 @@
                     
                     if(i!=charArr.length-1){
                         if(charArr[i][j] == charArr[i+1][j]){
-                            prefix = prefix+""+charArr[i][j];
                             i++;
                         }else
                             j++;
@@ -59,7 +72,7 @@
     public class Main{
         public static void main(String[] args) {
             Solution sol = new Solution();
-            String[] strs = {"flower", "flow", "flight"};
+            String[] strs = {"reflower", "flow", "flight"};
             System.out.println(sol.longestCommonPrefix(strs));
         }
     }
