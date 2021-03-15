@@ -44,20 +44,21 @@ class Solution {
 
         //여기가 이제 골때리는데...
 
+        boolean checker = false;
         for(int i=0; i<charArr.length; i++){
             for(int j=0; j<charArr[i].length; j++){
                 
                 while(i!=charArr.length-1){
                     if(charArr[i][j] == charArr[i+1][j]){
-                        prefix=prefix+""+charArr[i+1][j];
+                        checker = true;
                         i++;
                     }else{
-                        if(prefix.length()>1){
-                            prefix = prefix.substring(0, prefix.length()-1);
-                        }else{
-                            prefix = "";
-                        }
+                        checker = false;
+                        prefix = (prefix.length()>1)? prefix = prefix.substring(0, prefix.length()-1) : "";
+                        i++;
                     }
+                }if(checker){
+                    prefix = prefix+""+charArr[i][j];
                 }
             }
         }
@@ -68,7 +69,7 @@ class Solution {
 public class Main{
     public static void main(String[] args) {
         Solution sol = new Solution();
-        String[] strs = {"reflower", "flow", "flight"};
+        String[] strs = {"flat", "flow", "flower"};
         String result = sol.longestCommonPrefix(strs);
         System.out.println(result);
     }
