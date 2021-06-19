@@ -1,14 +1,27 @@
-package com.example.openapi_test
+// Leetcode #20
+// Valid Parentheses
+
+
+// "[]" -> true
+// "[]()" -> true
+// "[(){}]" -> true
+// "({)}" -> false
+
 
 class Leetcode20 {
+
+	/**
+	* isValid()
+	* @param s Input String
+	* @return Returns if the input has a valid parentheses format 
+	**/
+
     fun isValid(s: String): Boolean {
 
-        //길이 홀수일때 false
         if(s.length % 2 == 1){
             return false
         }
 
-        //첫 글자가 (아니거나, {아니거나, [아니면 false
         if(!s.startsWith("(") || !s.startsWith("{") || !s.startsWith("[")){
             return false
         }
