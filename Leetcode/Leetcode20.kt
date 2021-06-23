@@ -23,42 +23,53 @@ class Leetcode20 {
             return false
         }
 
-        if (!(s.startsWith("(") || s.startsWith("{") || s.startsWith("["))) {
-            return false
-        }
-
         val charSeq = s as CharSequence
-        var i = 0
+        var indexStart = 0
+        var indexEnd = charSeq.length - 1
         var flag = false
 
-        while (i != charSeq.length-1) {
-            if(i == charSeq.length){
-                return true
-            }
-            var charDiff: Int = when (charSeq[i]) {
+        var checker: Char = ' '
+
+        while (indexEnd - indexStart > 0 && indexStart < charSeq.length-1) {
+
+            var charDiff: Int = when (charSeq[indexStart]) {
                 '(' -> 1
                 '{', '[' -> 2
                 else -> return flag
             }
+            if (!(charSeq[indexStart] == '('
+                        || charSeq[indexStart] == '{'
+                        || charSeq[indexStart] == '[')
+            ) {
+                if (charSeq[indexStart] - checker == charDiff) {
+                    flag = true
+                    indexStart++
+                } else {
+                    return false
+                }
+            }
 
-            var comparator = charSeq[i]
-            var next = charSeq[i + 1]
+            var charCurr = charSeq[indexStart]
+            var charNext = charSeq[indexStart + 1]
+            var charLast = charSeq[indexEnd]
 
-            var indexDiff = charSeq.length - (i * 2 + 1)
-            var last = charSeq[i + indexDiff]
-
-            if (last - comparator == charDiff) {
+            //바로 옆과 짝지어질때 ()[]
+            if (charNext - charCurr == charDiff) {
                 flag = true
-                i ++
-            } else if (next - comparator == charDiff) {
+                indexStart += 2
+            }
+            //같은 층끼리 짝지어질때 ([])
+            else if (charLast - charCurr == charDiff) {
                 flag = true
-                i += 2
+                indexStart++
+                indexEnd--
             } else {
                 flag = false
-                i++
+                checker = charCurr
+                indexStart++
             }
         }
         return flag
     }
-
+//왤케 못풀지~
 }
