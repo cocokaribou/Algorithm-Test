@@ -34,21 +34,12 @@ class Solution {
             char compared = strs[0].charAt(i);
             
             for(int j = 1; j<strs.length; j++){
+                if(i > strs[j].length()-1) return result.toString();
                 if(compared != strs[j].charAt(i)) return result.toString();
             }
             result.append(compared);
-            
         }
         
         return result.toString();
-    }
-}
-
-public class Main{
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-        String[] strs = {"dog","dat"};
-        String result = sol.longestCommonPrefix(strs);
-        System.out.println(result);
     }
 }
