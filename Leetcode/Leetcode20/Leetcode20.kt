@@ -17,59 +17,50 @@ class Leetcode20 {
      * @return Returns if the input has a valid parentheses format
      **/
 
-    fun isValid(s: String): Boolean {
-
+        fun isValid(s: String): Boolean {
         if (s.length % 2 == 1) {
             return false
         }
+        val stack = ArrayDeque<Char>()
 
-        val charSeq = s as CharSequence
-        var indexStart = 0
-        var indexEnd = charSeq.length - 1
-        var flag = false
+        var i = 0
+        while (i < s.length-1) {
+            var charI = s[i]
+            val charJ = s[i + 1]
 
-        var checker: Char = ' '
-
-        while (indexEnd - indexStart > 0 && indexStart < charSeq.length-1) {
-
-            var charDiff: Int = when (charSeq[indexStart]) {
-                '(' -> 1
-                '{', '[' -> 2
-                else -> return flag
+            if (stack.isNotEmpty() && charI == stack.last()) {
+                charI = stack.removeLast()
             }
-            if (!(charSeq[indexStart] == '('
-                        || charSeq[indexStart] == '{'
-                        || charSeq[indexStart] == '[')
-            ) {
-                if (charSeq[indexStart] - checker == charDiff) {
-                    flag = true
-                    indexStart++
-                } else {
-                    return false
+
+            when (charJ - charI) {
+                // 바로 옆에 애와 짝지어질때
+                1 -> {
+                    if (charJ == ')') {
+                        i += 2
+                    }
+                }
+                2 -> {
+                    if ((charI == '{' && charJ == '}')
+                        || (charI == '[' && charJ == ']')
+                    ) {
+                        i += 2
+                    }
+                }
+                // 아닐 때, 스택 확인 후 전진
+                else -> {
+                    if (stack.isEmpty()) {
+                        if (!(charI == '(' && charI == '{' && charI == '[')) {
+                            return false
+                        } else {
+                            stack.add(charI)
+                            i++
+                        }
+                    }
                 }
             }
-
-            var charCurr = charSeq[indexStart]
-            var charNext = charSeq[indexStart + 1]
-            var charLast = charSeq[indexEnd]
-
-            //바로 옆과 짝지어질때 ()[]
-            if (charNext - charCurr == charDiff) {
-                flag = true
-                indexStart += 2
-            }
-            //같은 층끼리 짝지어질때 ([])
-            else if (charLast - charCurr == charDiff) {
-                flag = true
-                indexStart++
-                indexEnd--
-            } else {
-                flag = false
-                checker = charCurr
-                indexStart++
-            }
         }
-        return flag
+        return stack.isEmpty()
     }
+
 //왤케 못풀지~
 }
