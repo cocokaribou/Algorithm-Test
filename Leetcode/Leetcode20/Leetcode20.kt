@@ -9,6 +9,8 @@
 
 package com.example.algorithm_solutions.classes
 
+import java.util.*
+
 class Leetcode20 {
 
     /**
@@ -17,50 +19,48 @@ class Leetcode20 {
      * @return Returns if the input has a valid parentheses format
      **/
 
-        fun isValid(s: String): Boolean {
+    fun isValid(s: String): Boolean {
         if (s.length % 2 == 1) {
             return false
         }
-        val stack = ArrayDeque<Char>()
+
+        // stack that stores '(', '{', '['
+        val stack = Stack<Char>()
 
         var i = 0
-        while (i < s.length-1) {
-            var charI = s[i]
-            val charJ = s[i + 1]
-
-            if (stack.isNotEmpty() && charI == stack.last()) {
-                charI = stack.removeLast()
-            }
-
-            when (charJ - charI) {
-                // 바로 옆에 애와 짝지어질때
-                1 -> {
-                    if (charJ == ')') {
-                        i += 2
-                    }
-                }
-                2 -> {
-                    if ((charI == '{' && charJ == '}')
-                        || (charI == '[' && charJ == ']')
-                    ) {
-                        i += 2
-                    }
-                }
-                // 아닐 때, 스택 확인 후 전진
-                else -> {
-                    if (stack.isEmpty()) {
-                        if (!(charI == '(' && charI == '{' && charI == '[')) {
-                            return false
-                        } else {
-                            stack.add(charI)
-                            i++
+        while (i < s.length) {
+            val current = s[i]
+            if (current == '(' || current == '{' || current == '[') {
+                stack.push(current)
+                i++
+            } else {
+                if (!stack.empty()) {
+                    val prev = stack.peek()
+                    val diff = current - prev
+                    if (diff in 1..2) {
+                        when (diff) {
+                            1 -> {
+                                stack.pop()
+                                i++
+                            }
+                            2 -> {
+                                if ((prev == '{' && current == '}')
+                                    || (prev == '[' && current == ']')
+                                ) {
+                                    stack.pop()
+                                    i++
+                                }
+                            }
                         }
+                    } else {
+                        return false
                     }
+
+                } else {
+                    return false
                 }
             }
         }
-        return stack.isEmpty()
+        return stack.empty()
     }
-
-//왤케 못풀지~
 }
