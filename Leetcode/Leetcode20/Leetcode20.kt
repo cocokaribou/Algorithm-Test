@@ -19,7 +19,7 @@ class Leetcode20 {
      * @return Returns if the input has a valid parentheses format
      **/
 
-    fun isValid(s: String): Boolean {
+        fun isValid(s: String): Boolean {
         if (s.length % 2 == 1) {
             return false
         }
@@ -38,24 +38,11 @@ class Leetcode20 {
                     val prev = stack.peek()
                     val diff = current - prev
                     if (diff in 1..2) {
-                        when (diff) {
-                            1 -> {
-                                stack.pop()
-                                i++
-                            }
-                            2 -> {
-                                if ((prev == '{' && current == '}')
-                                    || (prev == '[' && current == ']')
-                                ) {
-                                    stack.pop()
-                                    i++
-                                }
-                            }
-                        }
+                        stack.pop()
+                        i++
                     } else {
                         return false
                     }
-
                 } else {
                     return false
                 }
@@ -63,4 +50,5 @@ class Leetcode20 {
         }
         return stack.empty()
     }
+
 }
