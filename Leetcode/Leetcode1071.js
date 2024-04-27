@@ -6,7 +6,7 @@ For two strings s and t, we say "t divides s" if and only if s = t + t + t + ...
 Given two strings str1 and str2, return the largest string x such that x divides both str1 and str2.
  * @param {string} str1 
  * @param {string} str2 
- * @returns {stringg}
+ * @returns {string}
  */
 
 var gcdOfStrings = function (str1, str2) {
@@ -20,36 +20,25 @@ var gcdOfStrings = function (str1, str2) {
     const checker = splitted.split(splitter)
     if (checker.join('') == '') return splitter
     
-    const gcd = getGcd(str1.length, str2.length)
-    const pattern = recognizePattern(splitter)
-    if (splitted.split(pattern).join('') == '') {
-        return pattern.repeat(gcd / pattern.length)
-    }
-    else return ""
-}
-
-function recognizePattern(str) {
     var pattern = ""
-    for (let i = 0; i < str.length; i++) {
+    for (let i = 0; i < splitted.length; i++) {
         if (i == 0) {
-            pattern += str[0]
+            pattern += splitted[0]
             continue
         }
-        if (pattern.repeat(str.length / pattern.length) != str)
-            pattern += str[i]
-        else
+        const matchStr1 = pattern.repeat(splitted.length / pattern.length)
+        const matchStr2 = pattern.repeat(splitter.length / pattern.length)
+        console.log(`1번 ${matchStr1}`)
+        console.log(`2번 ${matchStr2}`)
+        if (matchStr1 == splitted && matchStr2 == splitter)
             break
+        else
+            pattern += splitted[i]
     }
     return pattern
 }
-
-function getGcd(a, b) {
-    while (b !== 0) {
-        const temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-}
-
-console.log(gcdOfStrings("ABABABAB", "ABAB"))
+// console.log("AB".repeat(36))
+// console.log("")
+// console.log("AB".repeat(64))
+gcdOfStrings("ABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABAB", 
+"ABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABABAB")
