@@ -10,6 +10,7 @@ Algorithm Source Code
 ## Array
 |  |
 | ------- |
+| [1528-kids-with-the-greatest-number-of-candies](https://github.com/cocokaribou/Algorithm-Test/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/cocokaribou/Algorithm-Test/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 ## Math
 |  |
