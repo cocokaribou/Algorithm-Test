@@ -16,6 +16,7 @@ Algorithm Source Code
 | ------- |
 | [0009-palindrome-number](https://github.com/cocokaribou/Algorithm-Test/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/cocokaribou/Algorithm-Test/tree/master/0013-roman-to-integer) |
+| [1146-greatest-common-divisor-of-strings](https://github.com/cocokaribou/Algorithm-Test/tree/master/1146-greatest-common-divisor-of-strings) |
 | [2149-remove-colored-pieces-if-both-neighbors-are-the-same-color](https://github.com/cocokaribou/Algorithm-Test/tree/master/2149-remove-colored-pieces-if-both-neighbors-are-the-same-color) |
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/cocokaribou/Algorithm-Test/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 ## Greedy
@@ -29,6 +30,7 @@ Algorithm Source Code
 | [0013-roman-to-integer](https://github.com/cocokaribou/Algorithm-Test/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/cocokaribou/Algorithm-Test/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/cocokaribou/Algorithm-Test/tree/master/0020-valid-parentheses) |
+| [1146-greatest-common-divisor-of-strings](https://github.com/cocokaribou/Algorithm-Test/tree/master/1146-greatest-common-divisor-of-strings) |
 | [1894-merge-strings-alternately](https://github.com/cocokaribou/Algorithm-Test/tree/master/1894-merge-strings-alternately) |
 | [2149-remove-colored-pieces-if-both-neighbors-are-the-same-color](https://github.com/cocokaribou/Algorithm-Test/tree/master/2149-remove-colored-pieces-if-both-neighbors-are-the-same-color) |
 ## Game Theory
