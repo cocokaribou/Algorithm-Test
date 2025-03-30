@@ -10,6 +10,7 @@ Algorithm Source Code
 ## Array
 |  |
 | ------- |
+| [0605-can-place-flowers](https://github.com/cocokaribou/Algorithm-Test/tree/master/0605-can-place-flowers) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/cocokaribou/Algorithm-Test/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/cocokaribou/Algorithm-Test/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 ## Math
@@ -23,6 +24,7 @@ Algorithm Source Code
 ## Greedy
 |  |
 | ------- |
+| [0605-can-place-flowers](https://github.com/cocokaribou/Algorithm-Test/tree/master/0605-can-place-flowers) |
 | [2149-remove-colored-pieces-if-both-neighbors-are-the-same-color](https://github.com/cocokaribou/Algorithm-Test/tree/master/2149-remove-colored-pieces-if-both-neighbors-are-the-same-color) |
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/cocokaribou/Algorithm-Test/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 ## String
