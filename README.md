@@ -27,6 +27,7 @@ Algorithm Source Code
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/cocokaribou/Algorithm-Test/tree/master/0013-roman-to-integer) |
+| [0014-longest-common-prefix](https://github.com/cocokaribou/Algorithm-Test/tree/master/0014-longest-common-prefix) |
 | [2149-remove-colored-pieces-if-both-neighbors-are-the-same-color](https://github.com/cocokaribou/Algorithm-Test/tree/master/2149-remove-colored-pieces-if-both-neighbors-are-the-same-color) |
 ## Game Theory
 |  |
@@ -36,4 +37,8 @@ Algorithm Source Code
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/cocokaribou/Algorithm-Test/tree/master/0013-roman-to-integer) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/cocokaribou/Algorithm-Test/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
