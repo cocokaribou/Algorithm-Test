@@ -13,6 +13,7 @@ Algorithm Source Code
 | [0238-product-of-array-except-self](https://github.com/cocokaribou/Algorithm-Test/tree/master/0238-product-of-array-except-self) |
 | [0605-can-place-flowers](https://github.com/cocokaribou/Algorithm-Test/tree/master/0605-can-place-flowers) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/cocokaribou/Algorithm-Test/tree/master/1528-kids-with-the-greatest-number-of-candies) |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/cocokaribou/Algorithm-Test/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/cocokaribou/Algorithm-Test/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
 ## Math
 |  |
@@ -73,4 +74,12 @@ Algorithm Source Code
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/cocokaribou/Algorithm-Test/tree/master/0238-product-of-array-except-self) |
+## Breadth-First Search
+|  |
+| ------- |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/cocokaribou/Algorithm-Test/tree/master/2038-nearest-exit-from-entrance-in-maze) |
+## Matrix
+|  |
+| ------- |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/cocokaribou/Algorithm-Test/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 <!---LeetCode Topics End-->
