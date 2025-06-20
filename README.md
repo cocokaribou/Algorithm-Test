@@ -80,9 +80,22 @@ Algorithm Source Code
 ## Breadth-First Search
 |  |
 | ------- |
+| [0226-invert-binary-tree](https://github.com/cocokaribou/Algorithm-Test/tree/master/0226-invert-binary-tree) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/cocokaribou/Algorithm-Test/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## Matrix
 |  |
 | ------- |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/cocokaribou/Algorithm-Test/tree/master/2038-nearest-exit-from-entrance-in-maze) |
+## Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/cocokaribou/Algorithm-Test/tree/master/0226-invert-binary-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/cocokaribou/Algorithm-Test/tree/master/0226-invert-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/cocokaribou/Algorithm-Test/tree/master/0226-invert-binary-tree) |
 <!---LeetCode Topics End-->
