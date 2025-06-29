@@ -11,6 +11,7 @@ Algorithm Source Code
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/cocokaribou/Algorithm-Test/tree/master/0011-container-with-most-water) |
+| [0048-rotate-image](https://github.com/cocokaribou/Algorithm-Test/tree/master/0048-rotate-image) |
 | [0238-product-of-array-except-self](https://github.com/cocokaribou/Algorithm-Test/tree/master/0238-product-of-array-except-self) |
 | [0605-can-place-flowers](https://github.com/cocokaribou/Algorithm-Test/tree/master/0605-can-place-flowers) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/cocokaribou/Algorithm-Test/tree/master/1528-kids-with-the-greatest-number-of-candies) |
@@ -21,6 +22,7 @@ Algorithm Source Code
 | ------- |
 | [0009-palindrome-number](https://github.com/cocokaribou/Algorithm-Test/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/cocokaribou/Algorithm-Test/tree/master/0013-roman-to-integer) |
+| [0048-rotate-image](https://github.com/cocokaribou/Algorithm-Test/tree/master/0048-rotate-image) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/cocokaribou/Algorithm-Test/tree/master/1146-greatest-common-divisor-of-strings) |
 | [2149-remove-colored-pieces-if-both-neighbors-are-the-same-color](https://github.com/cocokaribou/Algorithm-Test/tree/master/2149-remove-colored-pieces-if-both-neighbors-are-the-same-color) |
 | [2604-minimum-operations-to-make-array-equal-ii](https://github.com/cocokaribou/Algorithm-Test/tree/master/2604-minimum-operations-to-make-array-equal-ii) |
@@ -85,6 +87,7 @@ Algorithm Source Code
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/cocokaribou/Algorithm-Test/tree/master/0048-rotate-image) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/cocokaribou/Algorithm-Test/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## Tree
 |  |
